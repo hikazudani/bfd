@@ -1,8 +1,8 @@
 /*
 3. Imprima os números de 1 a 100, mas:
-● Para múltiplos de 3, imprima "Fizz"
-● Para múltiplos de 5, imprima "Buzz"
-● Para múltiplos de ambos, imprima "FizzBuzz"
+    ● Para múltiplos de 3, imprima "Fizz"
+    ● Para múltiplos de 5, imprima "Buzz"
+    ● Para múltiplos de ambos, imprima "FizzBuzz"
 */
 
 
