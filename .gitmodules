@@ -1,0 +1,3 @@
+[submodule "01_HTML_CSS/resume"]
+	path = 01_HTML_CSS/resume
+	url = https://github.com/hikazudani/resume.git
