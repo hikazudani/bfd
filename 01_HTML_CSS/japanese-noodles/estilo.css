@@ -1,60 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Noto+Serif+JP:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Noto Serif JP', serif;
     text-align: center;
+    background-color: #2d2d2d; /* Fundo escuro, cor de carvão */
+    color: #cccccc; /* Cor de texto clara para bom contraste */
 }
 
 header {
-    padding: 20px;
-    font-size: 4em;
+    font-family: 'Yuji Syuku', cursive;
+    color: #c89b4f; /* Cor dourada/ocre para o título */
+    padding: 40px 20px;
+    font-size: 4.5em;
+    letter-spacing: 5px;
+    font-weight: normal;
 }
 
 main {
-    padding: 20px;
+    padding: 20px 40px 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
-section h1{
-    font-size: 2.5em;
+section h1 {
+    font-family: 'Yuji Syuku', cursive;
+    color: #f0f0f0;
+    font-size: 3em;
+    font-weight: normal;
     display: inline-block;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c89b4f; /* Linha de destaque dourada */
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
-.dish{
-    border-radius: 10px;
-    width: 400px;
+.dish {
+    background-color: #fdf6e3; /* Cor de papel envelhecido */
+    border-radius: 0; /* Cantos retos para um visual mais limpo */
+    width: 380px;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: border 0.3s ease; /* Transição suave para a borda */
     text-align: left;
+    border: 2px solid #dcd3c1; /* Borda sutil na cor do papel */
+    box-shadow: none; /* Removemos a sombra para um design plano */
+    color: #4f4f4f; /* Cor de texto mais escura para o cartão */
 }
 
 .dish:hover {
-    transform: translateY(-10px);
+    transform: none; /* Removemos o efeito de levantar */
+    box-shadow: none;
+    border: 2px solid #c89b4f; /* A borda se torna dourada ao passar o mouse */
 }
 
 .dish img {
     width: 100%;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
+    filter: saturate(1.1); /* Satura levemente a cor da imagem */
 }
 
 .dish_description {
-    padding: 20px;
+    padding: 25px;
 }
 
 .dish_header {
@@ -62,4 +84,31 @@ section h1{
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 15px;
+}
+
+.dish_header h2 {
+    font-size: 1.5em;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    color: #3a2e2e; /* Marrom escuro para o nome do prato */
+}
+
+.dish_header .price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #3a2e2e;
+}
+
+.dish_description p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #5c5c5c;
+}
+
+footer {
+    background-color: #1c1c1c; /* Rodapé quase preto */
+    color: #a0a0a0; /* Texto do rodapé em cinza claro */
+    padding: 40px 20px;
+    line-height: 1.8;
+    font-size: 1.5em;
 }
