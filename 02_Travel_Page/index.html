@@ -1,11 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dream Travel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <a href="#contact" class="button"> <strong>Dream Travel</strong></a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                    <li><a href="#our-beginning">Our Beginning</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__cta">
+                <a href="#contact" class="button">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="assets/images/paisagem--large.jpg 1920w, assets/images/paisagem--large-hi-dpi.jpg 3840w"
+                    media="(min-width: 1380px)">
+                <source srcset="assets/images/paisagem--medium.jpg 1380w" media="(min-width: 990px)">
+                <source srcset="assets/images/paisagem--small.jpg 990w" media="(min-width: 640px)">
+                <img srcset="assets/images/paisagem--smaller.jpg 640w, assets/images/paisagem--smaller-hi-dpi.jpg 1280w"
+                    alt="Coastal view of the ocean and mountains" class="hero__image">
+            </picture>
+            <div class="hero__text-content">
+                <div class="container">
+                    <h1 class="hero__title">Your clarity.</h1>
+                    <h2 class="hero__subtitle">One trip away.</h2>
+                    <p class="hero__description">We create soul-restoring journeys that inspire you to be you.</p>
+                    <p><a href="#contact" class="button button--orange button--large">Get Started Today</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-beginning" class="page-section">
+            <div class="container">
+                <h2 class="headline headline--centered headline--light">The first trip we planned <strong>was our
+                        own.</strong></h2>
+                <h3 class="headline headline--centered headline--orange headline--small headline--narrow">Ever since,
+                    we’ve been working to make travel <strong>better for everyone.</strong></h3>
+                <div class="container container--medium bottom-margin">
+                    <img sizes="(min-width: 970px) 976px, 100vw"
+                        srcset="assets/images/primeira-viagem.jpg 976w, assets/images/primeira-viagem-hi-dpi.jpg 1952w"
+                        alt="Couple walking down a street.">
+                </div>
+
+                <div class="row">
+                    <div class="row__medium-4 row__medium-4--larger">
+                        <picture>
+                            <source sizes="404px" srcset="assets/images/como-comecou.jpg 404w"
+                                media="(min-width: 1020px)">
+                            <source sizes="320px" srcset="assets/images/como-comecou-portrait.jpg 382w"
+                                media="(min-width: 800px)">
+                            <img srcset="assets/images/como-comecou-small.jpg 400w, assets/images/como-comecou-landscape.jpg 800w"
+                                alt="Our founder, Renata">
+                        </picture>
+                    </div>
+                    <div class="row__medium-8 row__medium-8--smaller">
+                        <div class="generic-content">
+                            <h2 class="headline">Here’s how it all started&hellip;</h2>
+                            <p>We started as two friends exhausted from the corporate routine who decided to test if a
+                                few intentionally planned days could truly change how we see life. We studied climates,
+                                less-obvious routes, hidden cafes, and discreet trails. Each experimental trip generated
+                                notes, adjustments, and a principle: traveling isn’t about accumulating places, it’s
+                                about creating internal space. See <a href="#">our methodology</a> and understand why we
+                                design journeys with meaning at every step.</p>
+                            <p>Today, we apply this learning so you don’t have to spend hours comparing blogs. Our
+                                curation combines rest, local culture, nature, and small optional challenges. We offer
+                                clear logistics, best travel times, sustainable alternatives, and real human support—no
+                                meaningless automated responses. Instead of just “escaping,” we want you to have moments
+                                that truly make sense: breathing fresh air, slowing down, rediscovering curiosities, and
+                                returning inspired.</p>
+                            <p>We want you to come home with more clarity, energy, and simple stories that make you
+                                smile. If you're ready to transform the way you use your days off, we're ready to plan
+                                together. <strong>Shall we begin?</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="page-section page-section--blue">
+            <div class="container">
+                <h2 class="section-title"><img src="assets/images/icons/star.svg" alt="" width="66" height="66"
+                        class="section-title__icon" loading="lazy"> Our <strong>Features</strong></h2>
+                <div class="row row--gutters-large">
+                    <div class="row__medium-6">
+                        <div class="feature-item">
+                            <img src="assets/images/icons/rain.svg" alt="Rain icon" width="66" height="66"
+                                class="feature-item__icon" loading="lazy">
+                            <h3 class="feature-item__title">We Monitor the Weather</h3>
+                            <p>Download our app and we’ll warn you if it’s about to rain in the next 20 minutes near
+                                your location. A good downpour can be refreshing, but sometimes you just want to stay
+                                dry.</p>
+                        </div>
+                        <div class="feature-item">
+                            <img src="assets/images/icons/globe.svg" alt="Globe icon" width="66" height="66"
+                                class="feature-item__icon" loading="lazy">
+                            <h3 class="feature-item__title">Global Guides</h3>
+                            <p>We’ve explored the planet for the best retreats and incredible views. If there's a corner
+                                you want to escape to, we know the most inspiring places.</p>
+                        </div>
+                    </div>
+                    <div class="row__medium-6">
+                        <div class="feature-item">
+                            <img src="assets/images/icons/wifi.svg" alt="Wi-Fi icon" width="62" height="66"
+                                class="feature-item__icon" loading="lazy">
+                            <h3 class="feature-item__title">Wi-Fi Hotspots</h3>
+                            <p>We only recommend trips to places we can guarantee are amazing. We map out local Wi-Fi
+                                hotspots and mark them all on the app's map.</p>
+                        </div>
+                        <div class="feature-item">
+                            <img src="assets/images/icons/fire.svg" alt="Fire icon" width="58" height="66"
+                                class="feature-item__icon" loading="lazy">
+                            <h3 class="feature-item__title">Survival Kit</h3>
+                            <p>Every time you book an escape with us, we send you a survival kit with essential
+                                supplies. It helps you set up a tent, start a fire, and (almost) solve anything.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="page-section">
+            <div class="container">
+                <h2 class="section-title section-title--blue"><img src="assets/images/icons/comment.svg" alt=""
+                        width="66" height="66" class="section-title__icon" loading="lazy"> <strong>Testimonials</strong>
+                </h2>
+                <div class="row row--gutters-small row--equal-height-at-large">
+                    <div class="row__large-4">
+                        <div class="testimonial">
+                            <div class="testimonial__photo">
+                                <img sizes="160px"
+                                    srcset="assets/images/testemunha-renata.jpg 160w, assets/images/testemunha-renata-hi-dpi.jpg 320w"
+                                    alt="Renata">
+                            </div>
+                            <h3 class="testimonial__title">Renata</h3>
+                            <h4 class="testimonial__subtitle">9-time Traveler</h4>
+                            <p>&ldquo;Impeccable service! Each trip surpasses the last. I can truly disconnect and come
+                                back renewed.&rdquo;</p>
+                        </div>
+                    </div>
+                    <div class="row__large-4">
+                        <div class="testimonial">
+                            <div class="testimonial__photo">
+                                <img sizes="160px"
+                                    srcset="assets/images/testemunha-joao.jpg 160w, assets/images/testemunha-joao-hi-dpi.jpg 320w"
+                                    alt="João">
+                            </div>
+                            <h3 class="testimonial__title">João</h3>
+                            <h4 class="testimonial__subtitle">4-time Traveler</h4>
+                            <p>&ldquo;Attentive team and very well-selected destinations. I recommend it to anyone
+                                seeking mental clarity.&rdquo;</p>
+                        </div>
+                    </div>
+                    <div class="row__large-4">
+                        <div class="testimonial">
+                            <div class="testimonial__photo">
+                                <img sizes="160px"
+                                    srcset="assets/images/testemunha-cat.jpg 160w, assets/images/testemunha-cat-hi-dpi.jpg 320w"
+                                    alt="Mimi the Cat">
+                            </div>
+                            <h3 class="testimonial__title">Mimi the Cat</h3>
+                            <h4 class="testimonial__subtitle">6-time Traveler</h4>
+                            <p>&ldquo;Well-thought-out itineraries and excellent support. Traveling has become simpler
+                                and more enjoyable.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <span class="site-footer__text">Copyright &copy; 2025 Clear View Escapes. All rights reserved.</span>
+                <a href="#contact" class="button button--orange">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
